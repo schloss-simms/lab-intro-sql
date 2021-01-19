@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>sakila</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>3378953528909427852</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8mb4</string>
+			<key>contentFilterV2</key>
+			<dict>
+				<key>children</key>
+				<array/>
+				<key>filterClass</key>
+				<string>groupNode</string>
+				<key>isConjunction</key>
+				<true/>
+			</dict>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeACllyZW50YWxfaWTSHh8t
+			Ll8QD05TTXV0YWJsZVN0cmluZ6MtLyNYTlNTdHJpbmfSHh8xMl5O
+			U011dGFibGVBcnJheaMxMyNXTlNBcnJhedIeHyI1oiIjXxAPTlNL
+			ZXllZEFyY2hpdmVy0Tg5VGRhdGGAAQAIABEAGgAjAC0AMgA3AEUA
+			SwBSAFoAZQBsAHAAcgB0AHYAegB8AH4AgACCAIcAjACRALoAwQDC
+			AMMAxQDKANUA3gD0APgBBQEOARMBFQEXARkBHgEoASoBNAE5AUsB
+			TwFYAV0BbAFwAXgBfQGAAZIBlQGaAAAAAAAAAgEAAAAAAAAAOgAA
+			AAAAAAAAAAAAAAAAAZw=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {787, 869}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset? &gt; Answer = 41
+select distinct(DATE(rental_date)) FROM sakila.rental
+
+</string>
+			<key>table</key>
+			<string>rental</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset?
+#select distinct rental_date as unique_rental_days from sakila.rental
+#select UNIQUE_DAYS 
+#select distinct DATEADD(DAY, DATEIFF(DAY,0,rental_date,120),120) as unique_rental_days from sakila.rental
+select distinct(DATE(rental_date)) FROM sakila.rental</string>
+		<string>SELECT CAST(FLOOR(CAST(rental_date AS FLOAT)) AS DATETIME) FROM sakila.rental
+SE</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset?
+#select distinct rental_date as unique_rental_days from sakila.rental
+#select UNIQUE_DAYS 
+#select distinct DATEADD(DAY, DATEIFF(DAY,0,rental_date,120),120) as unique_rental_days from sakila.rental
+
+
+SELECT rental_date FROM sakila.rental 
+SELECT CAST(FLOOR(CAST(rental_date AS FLOAT)) AS DATETIME) FROM sakila.rental
+SELECT CONVERT(DATETIME, CONVERT(VARCHAR(10), rental_date, 120) , 120) FROM sakila.rental 
+SELECT DATEADD(DAY, DATEDIFF(DAY, 0, rental_date), 0) FROM sakila.rental</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset?
+#select distinct rental_date as unique_rental_days from sakila.rental
+select distinct DATEADD(DAY, DATEIFF(DAY,0,rental_date,120),120) as unique_rental_days from sakila.rental</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset?
+select distinct rental_date as unique_rental_days from sakila.rental
+select distinct DATEADD(DAY, DATEIFF(DAY,0,rental_date,120),120) as unique_rental_days from sakila.rental</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset?
+select distinct rental_date as unique_rental_days from sakila.rental</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id FROM sakila.store;
+#select staff_id from sakila.staff; 
+#select first_name from sakila.staff;
+
+#Bonus - How many unique days did customers rent movies in this dataset?
+select distinct rental_date as unique_rental_days from sakila.entala</string>
+		<string>#Bonus - How many unique days did customers rent movies in this dataset?
+select distinct rental_date as unique_rental_days from sakila.entala</string>
+		<string>#Bonus - How many unique days did customers rent movies in this dataset?
+select rental_date as unique_rental_days from sakila.entala</string>
+		<string>select first_name from sakila.staff</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+#SELECT name as languages
+#FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+#SELECT store_id
+#FROM sakila.store;
+
+select staff_id from staff</string>
+		<string>SELECT store_id
+FROM sakila.store</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+SELECT name as languages
+FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+SELECT store_id
+FROM sakila.store</string>
+		<string>SELECT store_id
+FORM sakila.store</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+SELECT name as languages
+FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+SELECT store_id
+FORM sakila.store</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+SELECT name as languages
+FROM language
+
+#5 using "SELECT" find out how many stores and staff does the company have? Can you return a list of employee first names only?
+SELECT store_id
+FORM store</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+#SELECT language_id as language_count
+#FROM language
+
+#4 Get unique list of film languages under the alias language.
+SELECT name as languages
+FROM language</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+SELECT language_id as language_count
+FROM language</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+SELECT language_id as Count of Languages
+FROM language</string>
+		<string>#3  Select one column from a table. Get film titles.
+
+#SELECT title
+#FROM film
+
+#4 Select one column from a table and alias it. Get unique list of film languages under the alias language.
+SELECT language_id as Something
+FROM language</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>8.0.22</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
